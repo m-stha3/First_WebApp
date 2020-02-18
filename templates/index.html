@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>First_Webapp</title>
+</head>
+
+<body>
+    <a href="/admin">Click to login</a>
+    <br>
+    
+    <h2>Welcome This Response is working</h2>
+    {{key1}}
+    <br>
+    <br>
+    <a href="{%url 'result' %}">Click Here for result</a>
+    <br>
+    <form  action="{%url 'result' %}">
+        
+        {% csrf_token %}
+        <textarea cols="40" rows="20" type= "text" name="article"></textarea><br>
+        
+        <input type= "submit" value="submit">
+        
+    </form>
+
+</body>
+
+</html>
